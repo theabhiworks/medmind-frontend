@@ -1,0 +1,23 @@
+{
+  "name": "medmind",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MedMind – AI Mental Health Support Chatbot (Vite + React + Flask)",
+  "scripts": {
+    "dev:frontend": "vite",
+    "dev:backend": "python server/app.py",
+    "dev": "concurrently \"npm:dev:frontend\" \"npm:dev:backend\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.10"
+  }
+}
